@@ -1,0 +1,31 @@
+.body-home{
+   background-color: #23272a;
+}
+.body-task{
+   background-color: white;
+}
+li {
+   display: block;
+ }
+h1{
+   color: white;
+   font-size: 50px;
+   text-align: center;
+}
+.homework__container {
+}
+.homework__tasks {
+}
+.task{ 
+   padding-left: 20px;
+   &:not(:last-child){
+      padding-bottom: 20px;
+   }
+}
+.task__stile {
+}
+.task__1-stile {
+   color: white;
+   font-size: 24px;
+   text-decoration: none;
+}

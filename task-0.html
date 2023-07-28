@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 0</title>
+</head>
+<body class="body-task">
+   <script> 
+      //Задача 0. Реалізувати рекурсивну функцію знаходження степеня числа а
+      //Оголошуємо змінні
+      let number = 5, 
+          degree = 3
+
+      //Рекурсивна функція знаходження степеня числа а
+
+      function getNumberDegree(number, degree) {
+         if (degree === 0) return 1
+         return getNumberDegree(number, degree - 1) * number
+      }
+      let numberDegree = getNumberDegree(number, degree)
+      document.write(`Число ${number} в степені ${degree} дорівнює ${numberDegree}`)
+   </script>
+</body>
+</html>

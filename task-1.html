@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css ">
+   <title>Завдання 1</title>
+</head>
+<body>
+   <script>
+      //Нехай X0=1, Xi = Xi - 1 + 2i, де i = 1,2,... . Визначити X10. Розв’язати з використанням рекурсивних і нерекурсивних алгоритмів
+
+      //Оголошуємо змінні
+
+      let i = 10
+
+      //Розвʼязок за допомогою рекурсивної функції
+
+      function getX(i) {  
+         if (i === 0) return 1
+         return getX(i - 1) + 2 * i
+      }
+      let x = getX(i)
+      document.write(`Значення X рекурсивним розвʼязком = ${x}<br>`)
+
+   //Розвʼязок за допомогою не рекурсивної функції
+
+   function getXValue(i) {
+      let result = 1
+      if (i === 0) return result 
+      for (let k = 1; k <= i; k++) {
+         result += 2 * k
+      }
+   return result
+   }
+   let xValue = getXValue(i)
+      document.write(`Значення X звичайним розвʼязком = ${xValue}`)
+   </script>
+</body>
+</html>
